@@ -4,15 +4,15 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 const AppTab = createBottomTabNavigator();
 
-import Courses from "./pages/Courses";
-import Subjects from "./pages/Subjects";
+import Cursos from "./pages/Cursos";
+import Disciplinas from "./pages/Disciplinas";
 
 export default function Routes() {
   return (
     <NavigationContainer>
       <AppTab.Navigator screenOptions={{ headerShown: false }}>
-        <AppTab.Screen name="Courses" component={Courses} />
-        <AppTab.Screen name="Subjects" component={Subjects} />
+        <AppTab.Screen name="Cursos" component={Cursos} />
+        <AppTab.Screen name="Disciplinas" component={Disciplinas} />
       </AppTab.Navigator>
     </NavigationContainer>
   );
